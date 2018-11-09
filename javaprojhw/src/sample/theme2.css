@@ -11,15 +11,8 @@
 -fx-background-radius: 6;
 }
 .label{
--fx-text-fill:#cce6ff;
+-fx-text-fill:"black";
 -fx-font: 15px Optimus;
 -fx-stroke-width: 2;
 -fx-font-smoothing-type: lcd;
-}
-#TITLE{
--fx-text-fill:#cce6ff;
--fx-font: 50px GrindAndDeath_Demo;
--fx-stroke-width: 3;
--fx-font-smoothing-type: lcd;
-
 }

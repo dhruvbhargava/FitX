@@ -35,6 +35,7 @@ public class BMI_mod {
     }
     public void calculate(Stage primaryStage,Scene main_menu)
     {
+
         ChoiceBox<String> wunits=new ChoiceBox<>();
         ChoiceBox<String> hunits=new ChoiceBox<>();
         wunits.getItems().addAll("kg","lbs");
@@ -44,6 +45,7 @@ public class BMI_mod {
         TextField weight =new TextField("");
         TextField height = new TextField("");
         TextField BMI=new TextField("");
+        BMI.setMaxWidth(200.0d);
         weight.setPromptText("weight(in kgs)");
         height.setPromptText("height (in meters)");
         BMI.setPromptText("BMI");
@@ -54,7 +56,19 @@ public class BMI_mod {
             double bmi;
             try{
                 bmi=BMI_CALC(wunits.getValue(),hunits.getValue(),weight.getText(),height.getText());
-                BMI.setText(Double.toString(bmi));
+                String text;
+                text=Double.toString(bmi);
+                String.format(text,20 );
+                if(bmi<18.5)
+                    text+="(underweight)";
+                else if(bmi>=18.5 && bmi<25.0)
+                    text+="(fit)";
+                else if(bmi>=25.0 && bmi<30.0)
+                    text+="(overweight)";
+                else
+                    text+="(obese)";
+
+                BMI.setText(text);
             }catch(Exception e)
             {
                 formatWarn.format_warn();
@@ -70,7 +84,7 @@ public class BMI_mod {
         });
         GridPane l2=new GridPane();
         l2.setPadding(new Insets(20,20,20,20));
-        l2.getStylesheets().addAll(this.getClass().getResource("theme.css").toExternalForm());
+        l2.getStylesheets().addAll(this.getClass().getResource("theme2.css").toExternalForm());
         l2.setVgap(10);
         l2.getChildren().addAll(weight,height,b2,calculate,BMI,wunits,hunits);
         GridPane.setConstraints(b2,0,0);

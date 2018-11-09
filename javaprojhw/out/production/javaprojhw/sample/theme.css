@@ -3,16 +3,23 @@
 
 }
 .button{
--fx-background-color:#BCBEE6;
--fx-font: 15px Tahoma;
+-fx-background-color:#9999ff;
+-fx-font: 15px Optimus;
 -fx-text-fill: "white";
 -fx-stroke-width: 2;
 -fx-font-smoothing-type: lcd;
 -fx-background-radius: 6;
 }
 .label{
--fx-text-fill: "white";
--fx-font: 15px Tahoma;
+-fx-text-fill:#cce6ff;
+-fx-font: 15px Optimus;
 -fx-stroke-width: 2;
 -fx-font-smoothing-type: lcd;
+}
+#TITLE{
+-fx-text-fill:#cce6ff;
+-fx-font: 50px GrindAndDeath_Demo;
+-fx-stroke-width: 3;
+-fx-font-smoothing-type: lcd;
+
 }

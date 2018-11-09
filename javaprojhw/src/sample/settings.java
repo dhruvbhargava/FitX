@@ -39,7 +39,7 @@ public class settings
         GridPane.setConstraints(b,3,1);
         GridPane.setConstraints(b2,4,1);
         GridPane.setConstraints(l,3,0);
-        Sc =new Scene(layout,300,200);
+        Sc =new Scene(layout,400,200);
         window_2.setScene(Sc);
         window_2.showAndWait();
 
