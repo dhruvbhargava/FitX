@@ -1,0 +1,18 @@
+.root{
+-fx-background-color:#BCBEE6;
+
+}
+.button{
+-fx-background-color:#BCBEE6;
+-fx-font: 15px Tahoma;
+-fx-text-fill: "white";
+-fx-stroke-width: 2;
+-fx-font-smoothing-type: lcd;
+-fx-background-radius: 6;
+}
+.label{
+-fx-text-fill: "white";
+-fx-font: 15px Tahoma;
+-fx-stroke-width: 2;
+-fx-font-smoothing-type: lcd;
+}
