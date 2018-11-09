@@ -21,7 +21,7 @@ Scene main_menu;
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("FIT_SHIT_NIGGA");
+        primaryStage.setTitle("FitX");
         b =new Button("BMI calculator");
         diet=new Button("Diet plan");
         diet.setOnAction(event ->{
