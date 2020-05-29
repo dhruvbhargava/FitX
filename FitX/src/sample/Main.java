@@ -41,7 +41,7 @@ Label Title;
 
         GridPane layout=new GridPane();
         layout.setId("Pane");
-        layout.getStylesheets().addAll(this.getClass().getResource("theme.css").toExternalForm());
+        layout.getStylesheets().addAll(this.getClass().getResource("./themes/theme.css").toExternalForm());
         layout.setPadding(new Insets(20,20,20,20));
         layout.setVgap(10);
         layout.getChildren().addAll(b,diet,Title,w);

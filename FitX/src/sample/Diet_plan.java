@@ -181,7 +181,7 @@ public class Diet_plan {
      GridPane.setConstraints(back,0,7);
      gp.setPadding(new Insets(20,20,20,20));
      gp.setHgap(1);
-     gp.getStylesheets().add("sample//theme.css");
+     gp.getStylesheets().add("./themes/theme.css");
      Scene cc=new Scene(gp,600,400);
      window.setScene(cc);
      window.show();

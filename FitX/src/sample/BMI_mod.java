@@ -84,7 +84,7 @@ public class BMI_mod {
         });
         GridPane l2=new GridPane();
         l2.setPadding(new Insets(20,20,20,20));
-        l2.getStylesheets().addAll(this.getClass().getResource("theme2.css").toExternalForm());
+        l2.getStylesheets().addAll(this.getClass().getResource("./themes/theme2.css").toExternalForm());
         l2.setVgap(10);
         l2.getChildren().addAll(weight,height,b2,calculate,BMI,wunits,hunits);
         GridPane.setConstraints(b2,0,0);
